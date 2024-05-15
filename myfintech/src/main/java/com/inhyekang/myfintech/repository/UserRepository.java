@@ -1,4 +1,12 @@
 package com.inhyekang.myfintech.repository;
 
-public class UserRepository {
+import com.inhyekang.myfintech.entity.User;
+import org.springframework.data.repository.CrudRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends CrudRepository {
+    Optional<User> findById(Long id);
+    Optional<User> findByEmail(String email);
+    Optional<User> findBySub(String sub);
 }
