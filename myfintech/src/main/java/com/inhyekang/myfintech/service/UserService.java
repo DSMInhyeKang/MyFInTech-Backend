@@ -3,7 +3,7 @@ package com.inhyekang.myfintech.service;
 import com.inhyekang.myfintech.dto.request.RegisterRequest;
 import com.inhyekang.myfintech.dto.response.FindUserInfoResponse;
 import com.inhyekang.myfintech.dto.response.SearchUserResponse;
-import com.inhyekang.myfintech.entity.User;
+import com.inhyekang.myfintech.entity.user.User;
 import com.inhyekang.myfintech.exception.UserAlreadyExistException;
 import com.inhyekang.myfintech.exception.UserNotFoundException;
 import com.inhyekang.myfintech.facade.UserFacade;
@@ -32,6 +32,7 @@ public class UserService {
                     .build());
         }
     }
+
     public FindUserInfoResponse findMyInfo() {
 
         User user = userFacade.currentUser();

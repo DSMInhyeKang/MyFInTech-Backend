@@ -1,6 +1,6 @@
 package com.inhyekang.myfintech.dto.response;
 
-import com.inhyekang.myfintech.entity.User;
+import com.inhyekang.myfintech.entity.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

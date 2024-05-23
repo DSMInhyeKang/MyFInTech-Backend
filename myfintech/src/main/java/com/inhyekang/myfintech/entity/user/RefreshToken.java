@@ -1,4 +1,4 @@
-package com.inhyekang.myfintech.entity;
+package com.inhyekang.myfintech.entity.user;
 
 import lombok.Builder;
 import lombok.Getter;

@@ -1,7 +1,7 @@
 package com.inhyekang.myfintech.security.jwt;
 
 import com.inhyekang.myfintech.dto.response.TokensResponse;
-import com.inhyekang.myfintech.entity.RefreshToken;
+import com.inhyekang.myfintech.entity.user.RefreshToken;
 import com.inhyekang.myfintech.exception.TokenExpiredException;
 import com.inhyekang.myfintech.exception.TokenInvalidException;
 import com.inhyekang.myfintech.repository.RefreshTokenRepository;

@@ -1,6 +1,6 @@
 package com.inhyekang.myfintech.repository;
 
-import com.inhyekang.myfintech.entity.User;
+import com.inhyekang.myfintech.entity.user.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

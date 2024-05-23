@@ -1,6 +1,6 @@
 package com.inhyekang.myfintech.facade;
 
-import com.inhyekang.myfintech.entity.User;
+import com.inhyekang.myfintech.entity.user.User;
 import com.inhyekang.myfintech.exception.TokenInvalidException;
 import com.inhyekang.myfintech.exception.UserNotFoundException;
 import com.inhyekang.myfintech.repository.UserRepository;
