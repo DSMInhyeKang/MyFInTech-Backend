@@ -1,15 +1,22 @@
 package com.inhyekang.myfintech.entity.product;
 
 import jakarta.persistence.*;
+import lombok.*;
 
-public class Savings {
+@Entity
+@Table
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Saving {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
     @Enumerated(value = EnumType.STRING)
-    private DepositType type;
+    private SavingsType type;
 
     @Column(nullable = false)
     private String name;
