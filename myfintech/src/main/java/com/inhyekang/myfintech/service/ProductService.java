@@ -20,7 +20,7 @@ public class ProductService {
 
     @Transactional(readOnly = true)
     public DepositsResponse fetchAllDeposits() {
-        List<Deposit> deposits = depositsRepository.findAllDeposits();
+        List<Deposit> deposits = depositsRepository.findAll();
 
         return DepositsResponse.of(
                 deposits.stream().filter(it -> it.getType() == DepositType.REGULAR).toList(),
@@ -32,7 +32,7 @@ public class ProductService {
 
     @Transactional(readOnly = true)
     public SavingsResponse fetchAllSavings() {
-        List<Saving> savings = savingsRepository.findAllSavings();
+        List<Saving> savings = savingsRepository.findAll();
 
         return SavingsResponse.of(
                 savings.stream().filter(it -> it.getType() == SavingsType.REGULAR).toList(),

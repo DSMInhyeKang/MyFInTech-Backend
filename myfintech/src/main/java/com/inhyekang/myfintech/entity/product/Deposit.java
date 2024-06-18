@@ -24,10 +24,13 @@ public class Deposit {
     @Column(nullable = false)
     private String company;
 
+    @Column(nullable = false)
     private String maxRate;
 
+    @Column(nullable = false)
     private String defaultRate;
 
+    @Column(nullable = false)
     private String target;
 
     @Column(nullable = false)
@@ -37,7 +40,10 @@ public class Deposit {
     private String detail;
 
     @Column(nullable = false)
-    private Long URL;
+    private String interest;
+
+    @Column(nullable = false)
+    private String url;
 
     @Column(nullable = false)
     private boolean isBankingSector;
