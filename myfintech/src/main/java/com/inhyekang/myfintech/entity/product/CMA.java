@@ -9,14 +9,14 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Saving {
+public class CMA {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
     @Enumerated(value = EnumType.STRING)
-    private SavingsType type;
+    private CMAType type;
 
     @Column(nullable = false)
     private String name;
@@ -25,10 +25,13 @@ public class Saving {
     private String company;
 
     @Column(nullable = false)
-    private String maxRate;
+    private String revenue;
 
-    @Column(nullable = false)
-    private String defaultRate;
+    private String card;
+
+    private String stocks;
+
+    private String commission;
 
     @Column(nullable = false)
     private String target;
@@ -40,11 +43,5 @@ public class Saving {
     private String detail;
 
     @Column(nullable = false)
-    private String interest;
-
-    @Column(columnDefinition = "TEXT", nullable = false)
     private String url;
-
-    @Column(nullable = false)
-    private boolean isBankingSector;
 }

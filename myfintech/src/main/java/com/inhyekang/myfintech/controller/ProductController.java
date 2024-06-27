@@ -1,5 +1,6 @@
 package com.inhyekang.myfintech.controller;
 
+import com.inhyekang.myfintech.dto.response.CMAResponse;
 import com.inhyekang.myfintech.dto.response.DepositsResponse;
 import com.inhyekang.myfintech.dto.response.SavingsResponse;
 import com.inhyekang.myfintech.service.ProductService;
@@ -17,4 +18,7 @@ public class ProductController {
 
     @GetMapping("/savings")
     public SavingsResponse fetchAllSavings() { return productService.fetchAllSavings(); }
+
+    @GetMapping("/cmas")
+    public CMAResponse fetchAllCMAs() { return productService.fetchAllCMAs(); }
 }

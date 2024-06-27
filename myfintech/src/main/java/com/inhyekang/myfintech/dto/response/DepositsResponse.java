@@ -13,15 +13,13 @@ import java.util.List;
 @AllArgsConstructor
 public class DepositsResponse {
     private List<Deposit> regular;
-    private List<Deposit> cma;
     private List<Deposit> parking;
     private List<Deposit> mmda;
 
-    public static DepositsResponse of(List<Deposit> regular, List<Deposit> cma, List<Deposit> parking, List<Deposit> mmda) {
+    public static DepositsResponse of(List<Deposit> regular, List<Deposit> parking, List<Deposit> mmda) {
         return  DepositsResponse
                 .builder()
                 .regular(regular)
-                .cma(cma)
                 .parking(parking)
                 .mmda(mmda)
                 .build();
